@@ -42,53 +42,10 @@ Mục tiêu:
 
 ---
 
-## 📂 Cấu trúc repo
-
-```
-├── data/                  # Dữ liệu huấn luyện và kiểm thử
-├── models/                # Lưu mô hình PhoBERT fine-tuned
-├── phobert-embed/         # Vector embeddings
-├── results/               # Kết quả huấn luyện và đánh giá
-├── streamlit-app/         # Ứng dụng demo với Streamlit
-├── train.py               # Script huấn luyện
-├── inference.py           # Script dự đoán
-└── README.md
-```
-
----
-
-## 🚀 Cài đặt & Chạy thử
-
-### 1. Cài đặt môi trường
-```bash
-git clone https://github.com/tiennvo/Quora-Question-Pairs-PHOBERT.git
-cd Quora-Question-Pairs-PHOBERT
-
-# Tạo môi trường ảo
-python -m venv venv
-source venv/bin/activate   # Linux/Mac
-venv\Scripts\activate      # Windows
-
-# Cài đặt dependencies
-pip install -r requirements.txt
-```
-
-### 2. Huấn luyện mô hình
-```bash
-python train.py --epochs 5 --batch_size 32
-```
-
-### 3. Chạy inference (dự đoán độ tương đồng)
-```bash
-python inference.py --q1 "Trường nào có ngành CNTT?" --q2 "Đại học nào đào tạo ngành Công nghệ thông tin?"
-```
-
 ### 4. Ứng dụng demo với Streamlit
 ```bash
 streamlit run streamlit-app/app.py
 ```
-
----
 
 ## 📑 Bài báo khoa học
 
